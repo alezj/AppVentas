@@ -1,0 +1,2 @@
+# AppVentas
+Aplicación de ventas
