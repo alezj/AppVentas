@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppVentas
 {
-    public abstract class  Empleados
+    public abstract class  Empleados : IPay
     {
         public int ID { get; set; }
         public string FirstName { get; set; }
@@ -23,7 +23,7 @@ namespace AppVentas
 
         public override string ToString()
         {
-            return $"{ID} - {FirstName} {LastName}, " +
+            return $"\n {ID} - {FirstName} {LastName}, " +
                 $"Brith {BirthDate}, " +
                 $"Hiring {HiringDate}," +
                 $"Is Active: {IsActive}";
